@@ -1,0 +1,112 @@
+nav {
+    background-color: #332eb1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure equal spacing between child elements */
+    padding: 0 10px;
+    width: 100%; /* Ensure the nav element takes the full width of the page */
+    box-sizing: border-box; /* Ensure padding does not increase the overall size of the nav element */
+    flex-wrap: wrap; /* Allow child elements to wrap to the next line when the window is resized */
+    transition: all 0.3s ease; /* Background color transition effect */
+    height: 90px; /* Height of the navigation bar */
+    flex-direction: row;
+    position: fixed; /* Fix the navigation bar at the top of the page */
+    z-index: 1000; /* Ensure the navigation bar is displayed above all other elements */
+}
+
+nav .logo {
+    color: white; /* White text color */
+    font-size: 24px; /* Font size */
+    font-weight: bold; /* Bold text */
+    flex: 1; /* Allow the div to flex and take up remaining space */
+    text-align: center; /* Center the content inside the div */
+    margin-left: 0; /* Remove the margin between the ul and the div */
+    width: 50%; /* Width of the div */
+    margin: 0;
+}
+
+nav .menu {
+    display: flex; /* Use Flexbox to arrange child elements */
+    flex-direction: row; /* Arrange child elements horizontally */
+    align-items: center; /* Center child elements vertically */
+    justify-content: flex-start; /* Align child elements horizontally */
+    flex: 1; /* Allow the div to flex and take up remaining space */
+    margin-left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to display elements horizontally */
+    flex: 2; /* Allow the ul to flex and take up remaining space */
+    justify-content: flex-start; /* Align items in the ul */
+    transition: all 0.3s ease; /* Add smooth transition effect */
+    margin-right: 0; /* Remove the margin between the ul and the div */
+    font-size: 16px; /* Font size */
+}
+
+nav ul li {
+    margin-left: 10px; /* Create space between items */
+    justify-content: flex-start;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #172fe0;
+}
+
+.nav-toggle {
+    display: none; /* Hide the toggle button on large screens */
+    background-color: #332eb1;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px; /* Round the corners of the button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth transition effect */
+}
+
+.nav-toggle:hover {
+    background-color: #4444cc; /* Change background color on hover */
+    transform: scale(1.1); /* Slightly increase button size on hover */
+}
+
+@media (max-width: 1260px) {
+    nav {
+        height: auto; /* Auto height */
+        padding: 0 0px; /* Adjust padding for small screens */
+        flex-direction: column; /* Display elements vertically */
+    }
+
+    nav ul {
+        display: none; /* Hide the list on small screens */
+        flex-direction: column;
+        width: 100%; /* 100% width */
+    }
+
+    nav ul.active {
+        display: flex; /* Display the list when the toggle button is clicked */
+    }
+
+    nav div {
+        font-size: 20px; /* Reduce font size for small screens */
+    }
+
+    nav ul li a {
+        padding: 10px 12px; /* Reduce padding for items in ul */
+    }
+
+    .nav-toggle {
+        display: block; /* Display the toggle button on small screens */
+    }
+}

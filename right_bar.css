@@ -1,0 +1,37 @@
+.right-bar {
+    position: fixed; /* Set fixed position */
+    top: 60px; /* Set 60px from the top */
+    right: 0; /* Align to the right */
+    width: 80px; /* Set the width of the element */
+    height: 220px; /* Set the height of the element */
+    background-color: rgba(67, 24, 145, 0.9); /* Background color */
+    color: white; /* Text color */
+    z-index: 1000; /* Display priority */
+    padding: 10px 5px; /* Adjust padding */
+    box-sizing: border-box; /* Ensure size includes padding */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+    border-top-left-radius: 20px; /* Round top-left corner */
+    border-bottom-left-radius: 20px; /* Round bottom-left corner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.right-bar button {
+    display: block; /* Display as block */
+    width: 100%; /* Full width of parent element */
+    padding: 10px; /* Adjust padding */
+    background-color: transparent; /* Transparent background */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 14px; /* Adjust font size */
+    margin-bottom: 5px; /* Reduce space between buttons */
+    border: none; /* Remove button border */
+}
+
+.right-bar button:hover {
+    background-color: rgba(44, 12, 104, 1); /* Change background color on hover */
+    border-color: rgba(255, 255, 255, 1); /* Change border color on hover */
+    color: #ff9800; /* Change text color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+    transform: scale(1.05); /* Slightly increase button size on hover */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}

@@ -1,0 +1,27 @@
+/* Style for the Top Up button used for quick navigation to the top of the page */
+.top-up {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+    width: 50px; /* Width of the element */
+    height: 50px; /* Height of the element */
+    background-color: rgba(67, 24, 145, 0.9); /* Background color */
+    color: white; /* Text color */
+    z-index: 1000; /* Display priority on top */
+    display: flex; /* Use Flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border-radius: 50%; /* Rounded to create a circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effect for background color and size */
+}
+
+.top-up:hover {
+    background-color: #0056b3; /* Background color on hover */
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.top-up i {
+    font-size: 24px; /* Size of the icon */
+}

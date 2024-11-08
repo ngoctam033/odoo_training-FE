@@ -1,0 +1,72 @@
+/* slider */
+.slider-img {
+    background-image: url('https://p.w3layouts.com/demos_new/template_demo/07-04-2018/bake-demo_Free/1027606894/web/images/b3.jpg');
+    background-size: 110%; /* Đảm bảo ảnh nền bao phủ toàn bộ thẻ div */
+    background-position: center; /* Căn giữa ảnh nền */
+    height: 110vh; /* Chiều cao của thẻ div */
+    width: 100; /* Chiều rộng của thẻ div */
+    display: flex; /* Sử dụng flexbox để căn giữa nội dung */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+}
+
+.slider-info {
+    text-align: center; /* Căn giữa văn bản */
+    color: white; /* Màu chữ trắng */
+    margin-top: 35vh; /* Đẩy nội dung xuống dưới 1/2 chiều cao của thẻ */
+    transform: translateY(-50%); /* Điều chỉnh vị trí để căn giữa nội dung */
+}
+
+.slider-info h4 {
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    /* nâng kich thước chữ */
+    font-size: 58px;
+    font-family: 'Font2', sans-serif;
+}
+
+.slider-info p {
+    margin-bottom: 20px; /* Khoảng cách dưới đoạn văn */
+    font-size: 20px;
+    font-family: 'Font3', sans-serif;
+}
+
+.outs_more-buttn a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e61dbe;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Font4', sans-serif;
+}
+
+.outs_more-buttn a:hover {
+    background-color: #e600b0;
+}
+
+/* Thêm Media Query để xử lý màn hình nhỏ */
+@media screen and (max-width: 1260px) {
+    .slider-img {
+        height: 80vh; /* Điều chỉnh chiều cao cho màn hình nhỏ */
+        background-size: cover; /* Đảm bảo ảnh nền bao phủ toàn bộ thẻ div */
+    }
+
+    .slider-info {
+        margin-top: 20vh; /* Điều chỉnh vị trí cho màn hình nhỏ */
+        transform: translateY(-50%); /* Điều chỉnh vị trí để căn giữa nội dung */
+    }
+
+    .slider-info h4 {
+        font-size: 36px; /* Giảm kích thước chữ cho màn hình nhỏ */
+    }
+
+    .slider-info p {
+        font-size: 16px; /* Giảm kích thước chữ cho màn hình nhỏ */
+    }
+
+    .outs_more-buttn a {
+        padding: 8px 16px; /* Giảm padding cho màn hình nhỏ */
+        font-size: 14px; /* Giảm kích thước chữ cho màn hình nhỏ */
+    }
+}

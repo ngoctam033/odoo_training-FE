@@ -1,0 +1,101 @@
+/* about */
+/* Styles for .about-three-grids */
+.about-three-grids {
+    display: flex; /* Use Flexbox to arrange child elements horizontally */
+    width: 100%; /* Occupy the full width of the parent element */
+    height: 500px; /* Automatically adjust height */
+}
+
+/* General styles for child elements */
+.about-three-grids > div {
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text */
+}
+
+/* Styles for headings and paragraphs within child elements of .about-three-grids */
+.about-three-grids h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.about-three-grids p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0; /* Remove default margin of p tag */
+    width: 100%; /* Ensure p tag occupies the full width of the child div */
+}
+
+/* Specific styles for each child element */
+.child1 {
+    background-color: #007bff;
+    width: 25%;
+}
+
+.child2 {
+    background-image: url('https://p.w3layouts.com/demos_new/template_demo/07-04-2018/bake-demo_Free/1027606894/web/images/ab1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+.child3 {
+    background-color: #e83e8c;
+    width: 25%;
+}
+
+.child4 {
+    background-color: #ed6498;
+    width: 50%;
+}
+
+.child5 {
+    background-image: url('https://p.w3layouts.com/demos_new/template_demo/07-04-2018/bake-demo_Free/1027606894/web/images/ab2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+}
+
+.child6 {
+    background-color: #836eaa;
+    width: 25%;
+}
+
+.child7 {
+    background-image: url('https://p.w3layouts.com/demos_new/template_demo/07-04-2018/bake-demo_Free/1027606894/web/images/ab3.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+}
+
+.child8 {
+    background-color: #4e2a84;
+    width: 25%;
+}
+
+.child9 {
+    background-image: url('https://p.w3layouts.com/demos_new/template_demo/07-04-2018/bake-demo_Free/1027606894/web/images/ab4.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+/* Add Media Query to handle small screens */
+@media screen and (max-width: 768px) {
+    .about-three-grids {
+        flex-direction: column; /* Arrange child elements vertically */
+        height: auto; /* Automatically adjust height */
+        width: 100%; /* Occupy the full width of the parent element */
+    }
+
+    .about-three-grids > div {
+        width: calc(100vw); /* Occupy the full width minus padding */
+        height: calc(100vh / 3); /* Divide height into 3 parts minus padding */
+    }
+}

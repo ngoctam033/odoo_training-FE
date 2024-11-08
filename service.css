@@ -1,0 +1,127 @@
+/* service */
+/* Styles for the service section */
+.service {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    width: 100%;
+    height: auto;
+    background-image: url('https://p.w3layouts.com/demos_new/template_demo/07-04-2018/bake-demo_Free/1027606894/web/images/s1.jpg');
+    background-size: cover; /* Ensure the background image covers the entire element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+/* Styles for the .container inside .service */
+.service .container {
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding to the container */
+    box-sizing: border-box; /* Ensure padding does not affect the overall width */
+}
+
+/* Styles for the title */
+.service .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center; /* Center the title */
+}
+
+/* Styles for the service grid */
+.agile-service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Styles for each service item */
+.w3layouts-service-list {
+    margin-bottom: 30px;
+    flex: 1 1 calc(25% - 20px); /* Ensure each item takes up 25% width with spacing between items */
+    box-sizing: border-box;
+    padding: 0 10px; /* Add padding to each item */
+}
+
+/* Styles for the service element */
+.white-shadow {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.white-shadow:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the service icon */
+.text-wls-ser-bake {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Styles for the service title */
+.ser-inner-info h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Styles for the service description paragraph */
+.ser-inner-info p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Styles for the button */
+.outs-agile-buttn {
+    margin-top: 20px;
+}
+
+.outs-agile-buttn a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.outs-agile-buttn a:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries for devices with smaller screen sizes */
+@media (max-width: 768px) {
+    .w3layouts-service-list {
+        flex: 1 1 100%; /* Ensure each item takes up 100% width on small screens */
+        margin-bottom: 20px; /* Add spacing below each item */
+    }
+
+    .service .title {
+        font-size: 28px; /* Reduce the font size of the title on small screens */
+    }
+
+    .text-wls-ser-bake {
+        font-size: 30px; /* Reduce the font size of the service icon on small screens */
+    }
+
+    .ser-inner-info h4 {
+        font-size: 20px; /* Reduce the font size of the service title on small screens */
+    }
+
+    .ser-inner-info p {
+        font-size: 14px; /* Reduce the font size of the service description paragraph on small screens */
+    }
+
+    .outs-agile-buttn a {
+        padding: 8px 16px; /* Reduce the padding of the button on small screens */
+    }
+}

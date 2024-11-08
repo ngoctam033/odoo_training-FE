@@ -1,0 +1,38 @@
+/* testimonials */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 30px;
+    height: 480px;
+    background-image: url('https://p.w3layouts.com/demos_new/template_demo/07-04-2018/bake-demo_Free/1027606894/web/images/cc1.jpg');
+    background-size: cover; /* Ensure the background image covers the entire element */
+    background-position: center top; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    font-size: 36px;
+}
+
+.testimonials .title {
+    font-size: 125%;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#owl-demo {
+    font-size: 60%;
+    display: flex; /* Use Flexbox to center child elements */
+    flex-wrap: wrap; /* Allow child elements to wrap to the next line if there is not enough space */
+    justify-content: center; /* Center child elements horizontally */
+    align-items: center; /* Center child elements vertically */
+}
+
+#owl-demo .text-center {
+    /* Set a white background with transparency */
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center; /* Center the text */
+    border: 3px solid #fff; /* Add a border */
+    width: 90%; /* Set the width of the element */
+    margin: 10px auto; /* Center the element and add outer spacing */
+    /* Rounded corners */
+    border-radius: 10px;
+}

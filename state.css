@@ -1,0 +1,46 @@
+/* state */
+/* Kiểu dáng cho .state */
+.state {
+    padding: 60px 0;
+    /* chiều cao */
+    min-height: 150px;
+}
+
+.state .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jst-must-info {
+    text-align: center;
+}
+
+.stats-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.stats-grid {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stats-grid .counter {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.stats-grid .stat-info h4 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stats-grid {
+        width: 100%;
+    }
+}
